@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN Font-->
+    <link href="https://fonts.cdnfonts.com/css/druk-wide-bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cutrims" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/constructium" rel="stylesheet">
+    <!--Materialize Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font Awesome link-->
+    <script src="https://kit.fontawesome.com/9ad4475b45.js" crossorigin="anonymous"></script>
+    <!--Font Awsome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram's Brilliant Designing</title>
+    <style>
+        body {
+            background-color: #070B17;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        nav {
+            background: linear-gradient(#18244A, #283D7D);
+            display: flex;
+            align-items: center;
+        }
+        h5 {
+            background: linear-gradient(to right, rgb(48, 248, 255), rgb(130, 200, 229), rgb(0, 71, 171), rgb(0, 206, 200));
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: gradientAnimation 5s linear infinite;
+            font-weight: bolder;
+            font-family: 'Druk Wide Bold', sans-serif;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 200% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .main-content {
+            display: flex;
+            height: calc(100vh - 64px); 
+            align-items: stretch;
+        }
+        .left-section {
+            flex: 1;
+            background-color: #18244A;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .right-section {
+            flex: 2;
+            position: relative;
+        }
+        .slider {
+            width: 100%;
+            height: 100%;
+        }
+        .slider ul.slides li img {
+            object-fit: cover;
+        }
+        .greeting {
+            font-size: 1.5em;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .tagline {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            color: #E0FFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: 'Constructium', sans-serif;
+            font-size: 4em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="large">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <h5 class="left">
+                        Ram's Brilliant Designing
+                    </h5>
+                    <ul class="right">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100073360140520">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/yehohananbensimon/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ramses-chad-tupang-891545222/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="left-section">
+            <div class="greeting">
+                <h3 class="blue-text text-lighten-1">R.C. Tupang's Web Creation Portfolio</h3>
+                <div class="divider"></div>
+                <p class="blue-text text-lighten-4 text-align-right">Explore Ram's Websites Designed with Dedication and Effort</p>
+                <a href="index2.html" class="btn waves-effect waves-light blue">Explore</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="slider">
+                <div class="tagline">Ram's Slideshow Photography</div>
+                <ul class="slides">
+                    <li>
+                    <img src="AH1.png" alt="Image 1">
+                    </li>
+                    <li>
+                        <img src="AH2.png" alt="Image 2">
+                    </li>
+                    <li>
+                        <img src="AH3.png" alt="Image 3">
+                    </li>
+                    <li>
+                        <img src="cdm.png" alt="Image 4">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large green">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <ul>
+            <li>
+                <a class="green white-text"> Email me for questions or comments: ramsesreveche@gmail.com (Click again to close this floating button)
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 500;"></div>
+    <!--Jquery CDN Minified-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.fixed-action-btn').floatingActionButton({
+                hoverEnabled: false,
+                toolbarEnabled: true
+            });
+            $('.slider').slider({
+                indicators: false,
+                height: 703,
+                duration: 2000,
+                interval: 2000
+            });
+        });
+    </script>
+</body>
+</html>

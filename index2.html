@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/druk-wide-bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cutrims" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/constructium" rel="stylesheet">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9ad4475b45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Ram's Brilliant Designing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #070B17;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: linear-gradient(#18244A, #283D7D);
+            display: flex;
+            align-items: center;
+        }
+        h5 {
+            background: linear-gradient(to right, rgb(48, 248, 255), rgb(130, 200, 229), rgb(0, 71, 171), rgb(0, 206, 200));
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: gradientAnimation 5s linear infinite;
+            font-weight: bolder;
+            font-family: 'Druk Wide Bold', sans-serif;
+            text-align: left;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 200% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .container {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .left-section, .right-section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-section {
+            flex: 1;
+            background-color: #070B17;
+            color: white;
+        }
+        .right-section {
+            flex: 2;
+            background-color: #82c8e5;
+            color: #333;
+            text-align: left;
+        }
+        .circular-image img {
+            width: 350px;
+            height: 550px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ffffff;
+        }
+        .person-name {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Constructium', sans-serif;
+        }
+        .right-section h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 15px 0;
+        }
+        .paragraph {
+            font-size: 1em;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="large">
+                <div class="nav-wrapper">
+                    <ul class="right">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="circular-image">
+                <img src="Ram.jpg" alt="Person Image">
+            </div>
+            <p class="person-name">Ramses Chad R. Tupang</p>
+        </div>
+        <div class="right-section">
+            <h1>About Me</h1>
+            <div class="divider"></div>
+            <p>
+                Hi, I am Ramses Chad R. Tupang. I made this website which will serve as my Personal Portfolio that will 
+                showcase my Web Designing Projects and will also serve as my project for the Creative Web Designing 
+                Course Assessment by TESDA. I love learning about history, music, playing video games, and baking. As of now, I can only showcase 1
+                Website that I have created. This Website would have huge revisions in the future and significant improvements will be made.
+            </p>
+        </div>
+    </div>
+    <a href="https://certificateofcompletiontesda.my.canva.site/welcome-to-the-ics-exhibit-website">
+        <div>
+            <img src="CDMwebsite.png" alt="TESDA Logo">
+        </div>
+    </a>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
